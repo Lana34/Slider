@@ -1,5 +1,6 @@
+
+export const buttons = document.querySelectorAll('.slider__switchButton')
 const cursor = document.querySelector('.cursor')
-const buttons = document.querySelectorAll('.slider__switchButton')
 const links = document.getElementsByTagName('a')
 
 export const moveCursor = (e) => {
