@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-  entry: './src/index.js',
+entry: './src/index.js',
   module: {
     rules: [
       { test: /\.svg$/, use: 'svg-inline-loader' },
@@ -18,6 +18,14 @@ module.exports = {
     assetModuleFilename: '[name][ext]'
   },
 
+  devServer: {
+    port: 9000,
+    compress: true,
+    hot: true,
+    static: {
+    directory: path.join(__dirname, 'dist'),
+    }
+  },
   performance: {
     hints: false,
     maxAssetSize: 512000,

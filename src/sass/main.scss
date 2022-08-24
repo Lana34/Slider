@@ -16,33 +16,6 @@ body{
     cursor: none;
     }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-delay: 2s;
-}
-
-.fadeFirst {
-    -webkit-animation-name: fadeFirst;
-    -webkit-animation-duration: 3s;
-    animation-name: fadeFirst;
-    animation-duration: 3s;
-}
-
-.fadeSecond {
-    -webkit-animation-name: fadeSecond;
-    -webkit-animation-duration: 3s;
-    animation-name: fadeSecond;
-    animation-duration: 3s;
-}
-
-.animated {
-    animation: turnLeft 2s;
-
-}
-
 .slider__container {
     height: 100vh;
     background: $backgroundFirstSlide;
@@ -246,6 +219,32 @@ z-index: 4;
     transform: scale(1.2);
     transition-duration: 1s;
 }
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.fadeFirst {
+    -webkit-animation-name: fadeFirst;
+    -webkit-animation-duration: 3s;
+    animation-name: fadeFirst;
+    animation-duration: 3s;
+}
+
+.fadeSecond {
+    -webkit-animation-name: fadeSecond;
+    -webkit-animation-duration: 3s;
+    animation-name: fadeSecond;
+    animation-duration: 3s;
+}
+
+.animated {
+    animation: turnLeft 2s;
+
+}
 
 @keyframes fade {
     from {
@@ -267,22 +266,23 @@ z-index: 4;
     }
 }
 
-@keyframes fadeFirst {
+@keyframes  fadeFirst {
     from {
-        background-color: $backgroundCircleSecondSlide;
+        background-color: #8675BA;
     }
 
     to {
-        background-color: $backgroundCircleFirstSlide;
+        background-color: #8DBDBA;
+        ;
     }
 }
 
-@keyframes fadeSecond {
+@keyframes  fadeSecond {
     from {
-        background-color: $backgroundCircleFirstSlide;
+        background-color: #8DBDBA;
     }
 
     to {
-        background-color: $backgroundCircleSecondSlide;
+        background-color: #8675BA;
     }
 }
